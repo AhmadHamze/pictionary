@@ -1,7 +1,10 @@
+let socket;
+
 function setup() {
   const canvas = createCanvas(500, 500);
   canvas.parent("container");
   background(0);
+  socket = io.connect("http://localhost:5000");
 }
 
 function draw() {

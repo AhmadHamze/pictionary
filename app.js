@@ -1,8 +1,13 @@
 const express = require("express");
+const socket = require("socket.io");
+
 const app = express();
 
 app.use(express.static("./public"));
 
-app.listen(5000, () => {
-  console.log("Express is listening on port 5000");
+const server = app.listen(5000);
+const io = socket(server);
+
+io.sockets.on("connection", (socket) => {
+  console.log(`new connection: ${socket.id}`);
 });
