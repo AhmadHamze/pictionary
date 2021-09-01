@@ -1,0 +1,24 @@
+{
+  "name": "pictionary",
+  "version": "1.0.0",
+  "description": "A pictionary using p5 and web sockets",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmadHamze/pictionary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmadHamze/pictionary/issues"
+  },
+  "homepage": "https://github.com/AhmadHamze/pictionary#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
